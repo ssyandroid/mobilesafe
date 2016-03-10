@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:paddingTop="10dp"
+    tools:context="com.sansan.mobilesafe.HomeActivity" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="温馨提示"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333" />
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#dd000000" />
+    <ProgressBar
+        android:id="@+id/pb_update"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:max="100"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:progressDrawable="@drawable/progress_update" />
+    
+    <View
+        android:id="@+id/v_h"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/pb_update"
+        android:layout_marginTop="15dp"
+        android:background="#ddaaaaaa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_h"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_cancle_update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bt_dialog"
+            android:text="取消"
+            android:textColor="#dd000000"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bt_dialog_cancle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_dialog"
+            android:text="取消"
+            android:textColor="#dd000000" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#ddaaaaaa" />
+
+        <Button
+            android:id="@+id/bt_dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_dialog"
+            android:text="确定"
+            android:textColor="#3593dd" />
+    </LinearLayout>
+
+</RelativeLayout>

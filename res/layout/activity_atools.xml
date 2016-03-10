@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/lost_bar"
+        layout="@layout/title_bar" />
+
+    <View
+        style="@style/setingline2"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_numberlocate"
+        android:onClick="numberlocate"
+        style="@style/setingtext"
+        android:drawableLeft="@drawable/mh"
+        android:text="查询手机号码归属地" />
+
+    <View style="@style/setingline2" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="添加亲友号码，可发送短信控制被盗手机"
+        android:textColor="#888"
+        android:textSize="12sp" />
+
+    <View style="@style/setingline2" />
+
+    <TextView
+        android:id="@+id/tv_getsafenumber"
+        style="@style/setingtext"
+        android:text="请选择亲友号码"
+        android:drawableLeft="@drawable/g" />
+
+    <View style="@style/setingline2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="提示：SIM卡被更换时将自动向您的亲友号码发送短信通知。由此产生的短信费用由运营商收取。"
+        android:textColor="#888"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_guide_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/es"
+        android:drawablePadding="5dp"
+        android:clickable="true"
+        android:text="把防盗指令通过短信备份给亲友号码"
+        android:textColor="#333"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/find_guide"
+        android:textColor="#888"
+        android:textSize="12sp" />
+
+</LinearLayout>

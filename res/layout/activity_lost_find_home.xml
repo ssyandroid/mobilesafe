@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <include
+        android:id="@+id/lost_bar"
+        layout="@layout/title_bar" />
+
+    <ImageView 
+        android:id="@+id/iv_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lost_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/protection_opened"/>
+    <TextView
+        android:id="@+id/iv_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:text="恭喜您已经开启防盗，为了您的利益，请妥善保管好手机，防止被盗被窃。如需关闭防盗，请点击关闭，如要重设密码请到设置，进行设置"
+        android:textColor="#333"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_lost"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/find_guide"
+        android:textColor="#888"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_off_find"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_bg"
+        android:text="关闭防盗"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <include
+        android:id="@+id/lost_bar"
+        layout="@layout/title_bar" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lost_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="20dp"
+        android:hint="请输入查询的号码"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bt_open_find"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lost_bar"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_bg"
+        android:onClick="query"
+        android:text="查询"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_numer_reuslt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_number"
+        android:layout_below="@id/et_number"
+        android:layout_marginTop="10dp"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+</RelativeLayout>

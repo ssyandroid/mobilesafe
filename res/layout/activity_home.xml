@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kh"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/home_top"
+        layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_home_anquandu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="安全度高"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_home_anquandu"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sh" />
+
+            <ImageView
+                android:id="@+id/iv_home_kedu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_home_anquandu"
+                android:layout_centerInParent="true"
+                android:src="@drawable/rh" />
+
+            <TextView
+                android:id="@+id/tv_home_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="100"
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/tv_home_qingjiedu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageView1"
+                android:layout_marginBottom="40dp"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="清洁度高"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_home_liuchangdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageView1"
+                android:layout_marginBottom="40dp"
+                android:layout_toLeftOf="@id/imageView1"
+                android:text="流畅度高"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+
+</LinearLayout>

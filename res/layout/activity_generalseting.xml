@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sansan="http://schemas.android.com/apk/res/com.sansan.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View style="@style/setingline2" />
+
+            <TextView
+                android:id="@+id/tv_seting"
+                style="@style/setingtext"
+                android:text="防通话窃听" />
+
+            <View style="@style/setingline2" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.sansan.mobilesafe.ui.SettingToggleButtonView
+                android:id="@+id/tb_update"
+                style="@style/tb_textview"
+                sansan:desc_off="已关闭自动更新"
+                sansan:desc_on="已打开自动更新"
+                sansan:isCheck="true"
+                sansan:title="自动更新" >
+            </com.sansan.mobilesafe.ui.SettingToggleButtonView>
+
+            <View style="@style/setingline" />
+
+            <com.sansan.mobilesafe.ui.SettingToggleButtonView
+                android:id="@+id/tb_yonghutiyan"
+                style="@style/tb_textview"
+                sansan:isCheck="false"
+                sansan:title="用户体验改进计划" >
+            </com.sansan.mobilesafe.ui.SettingToggleButtonView>
+
+            <!-- <View style="@style/setingline" />
+            
+            <TextView
+                android:id="@+id/tv_about"
+                style="@style/setingtext"
+                android:text="开源许可" /> -->
+
+            <View style="@style/setingline2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

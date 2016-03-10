@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机卫士</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="find_guide">指令包括：\n追踪手机位置，发送：#weizhi#\n手机响警报音，发送：#jingbao#\n锁定手机，发送：#suoding#\n删除数据，发送：#shanchu#</string>
+
+</resources>

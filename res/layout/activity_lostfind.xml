@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <include
+        android:id="@+id/lost_bar"
+        layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/lost_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lost_bar"
+        layout="@layout/guide_lostfind"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fd"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt_open_find"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_bg"
+        android:text="开启防盗"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/bt_find_ok"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_bg"
+        android:text="完成"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

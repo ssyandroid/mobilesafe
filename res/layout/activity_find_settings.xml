@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sansan="http://schemas.android.com/apk/res/com.sansan.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View style="@style/setingline2" />
+
+            <TextView
+                android:id="@+id/tv_seting"
+                style="@style/setingtext"
+                android:text="防通话窃听" />
+
+            <View style="@style/setingline2" />
+        </LinearLayout>        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View style="@style/setingline" />
+
+            <TextView
+                android:id="@+id/tv_safe_number"
+                style="@style/setingtext"
+                android:text="亲友号码" />
+
+            <!-- <View style="@style/setingline" />
+
+            <TextView
+                android:id="@+id/tv_backup_zhiling"
+                style="@style/setingtext"
+                android:text="备忘远程控制指令" /> 
+
+            <View style="@style/setingline" /> 
+
+            <TextView
+                android:id="@+id/tv_set_pwd"
+                style="@style/setingtext"
+                android:text="设置防盗密码" /> -->
+
+            <View style="@style/setingline2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

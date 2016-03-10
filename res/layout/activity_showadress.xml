@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sansan="http://schemas.android.com/apk/res/com.sansan.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View style="@style/setingline2" />
+
+            <com.sansan.mobilesafe.ui.SettingToggleButtonView
+                android:id="@+id/tb_open_numberfloat"
+                style="@style/tb_textview"
+                sansan:desc_off="已关闭来电归属地悬浮窗"
+                sansan:desc_on="已开启来电归属地悬浮窗"
+                sansan:isCheck="true"
+                sansan:title="来电归属地悬浮窗" >
+            </com.sansan.mobilesafe.ui.SettingToggleButtonView>
+
+            <View style="@style/setingline" />
+
+            <com.sansan.mobilesafe.ui.SettingTextButtonView
+                android:id="@+id/tv_numberfloat_style"
+                style="@style/tb_textview"
+                sansan:desc_on="半透明"
+                sansan:title="归属地悬浮窗样式" >
+            </com.sansan.mobilesafe.ui.SettingTextButtonView>
+
+            <View style="@style/setingline2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

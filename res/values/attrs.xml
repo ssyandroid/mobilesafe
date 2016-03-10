@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 声名属性集的名称 -->
+    <declare-styleable name="MyToggleBtn">
+        <attr name="my_background" format="reference" />
+        <attr name="my_slide_btn" format="reference" />
+        <attr name="curr_state" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TextView">
+        <attr name="title" format="string" />
+        <attr name="desc_on" format="string" />
+        <attr name="desc_off" format="string" />
+        <attr name="image_on" format="reference" />
+        <attr name="image_off" format="reference" />
+        <attr name="isCheck" format="boolean" />
+    </declare-styleable>
+    
+    <!-- 这是slidingmenu自定义属性 -->
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+</resources><!--
+	format 		常用类型
+	reference	引用
+	color		颜色
+	boolean		布尔值
+	dimension	尺寸值
+	float		浮点值
+	integer		整型值
+	string		字符串
+	enum		枚举
+-->

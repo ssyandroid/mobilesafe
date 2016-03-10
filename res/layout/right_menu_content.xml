@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303038"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#383840"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:drawablePadding="15dp"
+                android:drawableTop="@drawable/yb"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="登录后更方便使用"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bt_cancle"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <View style="@style/bg_line2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" 
+            android:background="#383840">
+
+            <View style="@style/bg_line2" />
+
+            <TextView
+                style="@style/usertext"
+                android:drawableLeft="@drawable/em"
+                android:text="活动" />
+
+            <View style="@style/bg_line" />
+
+            <TextView
+                style="@style/usertext"
+                android:drawableLeft="@drawable/cm"
+                android:text="换肤" />
+
+            <View style="@style/bg_line2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#383840"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View style="@style/bg_line2" />
+
+            <TextView
+                android:id="@+id/tv_setings"
+                style="@style/usertext"
+                android:drawableLeft="@drawable/am"
+                android:text="设置" />
+
+            <View style="@style/bg_line" />
+
+            <TextView
+                android:id="@+id/tv_fankui"
+                style="@style/usertext"
+                android:drawableLeft="@drawable/bm"
+                android:text="反馈" />
+
+            <View style="@style/bg_line" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                style="@style/usertext"
+                android:drawableLeft="@drawable/dm"
+                android:text="关于" />
+
+            <View style="@style/bg_line2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
